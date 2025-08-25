@@ -6,7 +6,7 @@ const OrderHistory = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       const userId = localStorage.getItem('userId');
-      const res = await fetch(`http://localhost:8000/api/orders/${userId}`);
+      const res = await fetch(`https://chic-a-boo-backend.onrender.com/api/orders/${userId}`);
       const data = await res.json();
       setOrders(data);
     };

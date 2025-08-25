@@ -15,7 +15,7 @@ const Shorts = () => {
   useEffect(() => {
     const fetchShorts = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/men/shorts');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/men/shorts');
         setShorts(res.data);
       } catch (err) {
         console.error('Error fetching shorts:', err);

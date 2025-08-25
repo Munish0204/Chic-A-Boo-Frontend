@@ -34,7 +34,7 @@ const WesternWearDetail = () => {
     const fetchItem = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/women/western/${productId}`
+          `https://chic-a-boo-backend.onrender.com/api/women/western/${productId}`
         );
         setItem(res.data);
       } catch (err) {

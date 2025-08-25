@@ -13,7 +13,7 @@ const WatchDetail = () => {
   useEffect(() => {
     const fetchWatch = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/men/watches/${productId}`);
+        const res = await axios.get(`https://chic-a-boo-backend.onrender.com/api/men/watches/${productId}`);
         setWatch(res.data);
       } catch (err) {
         console.error('Error fetching watch:', err);

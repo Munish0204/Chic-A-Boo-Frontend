@@ -7,7 +7,7 @@ export default defineConfig({
 server: {
    proxy: {
       "/api": {
-        target: "http://localhost:8000",  // Backend URL
+        target: "https://chic-a-boo-backend.onrender.com",  // Backend URL
         changeOrigin: true,
         secure: false,
       },

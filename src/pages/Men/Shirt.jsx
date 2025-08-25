@@ -15,7 +15,7 @@ const Shirt = () => {
   useEffect(() => {
     const fetchShirts = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/men/shirts');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/men/shirts');
         setShirts(res.data);
       } catch (err) {
         console.error('Error fetching shirts:', err);

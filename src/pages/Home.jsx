@@ -40,7 +40,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/products');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/products');
         setProducts(res.data.length ? res.data : sampleProducts);
       } catch (error) {
         console.error('Error fetching products:', error);

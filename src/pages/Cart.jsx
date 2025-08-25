@@ -22,7 +22,7 @@ const Cart = () => {
     };
 
     try {
-      await fetch('http://localhost:8000/api/orders', {
+      await fetch('https://chic-a-boo-backend.onrender.com/api/orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(order),

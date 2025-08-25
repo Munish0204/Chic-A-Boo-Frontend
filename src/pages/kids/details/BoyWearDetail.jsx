@@ -23,7 +23,7 @@ const BoyswearDetail = () => {
 
     const fetchItem = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/kids/boyswear/${productId}`);
+        const res = await axios.get(`https://chic-a-boo-backend.onrender.com/api/kids/boyswear/${productId}`);
         setItem(res.data);
         setMainImage(res.data.image); // Set default main image
       } catch (err) {

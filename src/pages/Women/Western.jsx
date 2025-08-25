@@ -14,7 +14,7 @@ const Western = () => {
   useEffect(() => {
     const fetchWestern = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/women/western');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/women/western');
         setWestern(res.data);
       } catch (err) {
         console.error('Error fetching western wear:', err);

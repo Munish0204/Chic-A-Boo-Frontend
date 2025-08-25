@@ -28,7 +28,7 @@ export default function Login() {
     setInfo("");
 
     try {
-      const res = await fetch("http://localhost:8000/api/auth/request-otp", {
+      const res = await fetch("https://chic-a-boo-backend.onrender.com/api/auth/request-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, phone }),
@@ -76,7 +76,7 @@ export default function Login() {
     setInfo("");
 
     try {
-      const res = await fetch("http://localhost:8000/api/auth/resend-otp", {
+      const res = await fetch("https://chic-a-boo-backend.onrender.com/api/auth/resend-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone }),

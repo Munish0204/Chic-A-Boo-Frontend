@@ -14,7 +14,7 @@ const Outwear = () => {
   useEffect(() => {
     const fetchOutwear = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/women/outwear');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/women/outwear');
         setOutwear(res.data);
       } catch (err) {
         console.error('Error fetching outwear:', err);

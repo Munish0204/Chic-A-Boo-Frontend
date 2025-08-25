@@ -15,7 +15,7 @@ const Traditional = () => {
   useEffect(() => {
     const fetchTraditionals = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/men/traditional');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/men/traditional');
         setTraditionals(res.data);
       } catch (err) {
         console.error('Error fetching traditional items:', err);

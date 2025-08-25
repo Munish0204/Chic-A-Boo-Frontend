@@ -14,7 +14,7 @@ const EthnicWear = () => {
   useEffect(() => {
     const fetchEthnicWear = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/women/ethnic');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/women/ethnic');
         setEthnicWear(res.data);
       } catch (err) {
         console.error('Error fetching ethnic wear:', err);

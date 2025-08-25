@@ -15,7 +15,7 @@ const Tracks = () => {
   useEffect(() => {
     const fetchTracks = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/men/tracks');
+        const res = await axios.get('https://chic-a-boo-backend.onrender.com/api/men/tracks');
         setTracks(res.data);
       } catch (err) {
         console.error('Error fetching tracks:', err);

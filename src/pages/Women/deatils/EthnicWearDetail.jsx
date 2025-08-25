@@ -37,7 +37,7 @@ const EthnicWearDetail = () => {
       try {
         // <-- Changed API endpoint here to fetch ethnic wear details
         const res = await axios.get(
-          `http://localhost:8000/api/women/ethnic/${productId}`
+          `https://chic-a-boo-backend.onrender.com/api/women/ethnic/${productId}`
         );
         setItem(res.data);
       } catch (err) {

@@ -33,7 +33,7 @@ const ShortsDetail = () => {
     const fetchItem = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/men/shorts/${productId}`
+          `https://chic-a-boo-backend.onrender.com/api/men/shorts/${productId}`
         );
         setItem(res.data);
       } catch (err) {

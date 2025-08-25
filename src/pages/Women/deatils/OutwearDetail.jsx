@@ -34,7 +34,7 @@ const OutwearDetail = () => {
     const fetchItem = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:8000/api/women/outwear/${productId}`
+          `https://chic-a-boo-backend.onrender.com/api/women/outwear/${productId}`
         );
         setItem(res.data);
       } catch (err) {

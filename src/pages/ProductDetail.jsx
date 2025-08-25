@@ -23,7 +23,7 @@ const ProductDetail = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await axios.get(`http://localhost:8000/api/products/${productId}`);
+        const res = await axios.get(`https://chic-a-boo-backend.onrender.com/api/products/${productId}`);
         setProduct(res.data);
       } catch (err) {
         console.error('Error fetching product:', err);
@@ -55,10 +55,10 @@ const ProductDetail = () => {
         size: selectedSize,
       };
 
-      await axios.post(`http://localhost:8000/api/products/${productId}/reviews`, reviewData);
+      await axios.post(`https://chic-a-boo-backend.onrender.com/api/products/${productId}/reviews`, reviewData);
 
       // Refetch updated product with new review
-      const res = await axios.get(`http://localhost:8000/api/products/${productId}`);
+      const res = await axios.get(`https://chic-a-boo-backend.onrender.com/api/products/${productId}`);
       setProduct(res.data);
 
       setSelectedRating(0);
