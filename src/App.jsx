@@ -18,7 +18,7 @@ import Signup from "./pages/Signup";
 
 // Kids Product Detail Pages
 
-import BoyswearDetail from "./pages/Kids/details/BoyWearDetail";
+import BoyswearDetail from './pages/kids/details/BoyWearDetail';
 import GirlwearDetail from "./pages/Kids/details/GirlWearDetail";
 
 
