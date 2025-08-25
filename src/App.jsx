@@ -19,7 +19,7 @@ import Signup from "./pages/Signup";
 // Kids Product Detail Pages
 
 import BoyswearDetail from './pages/kids/details/BoyWearDetail';
-import GirlwearDetail from "./pages/Kids/details/GirlWearDetail";
+import GirlWearDetail from './pages/kids/details/GirlWearDetail';
 
 
 
@@ -100,7 +100,7 @@ function App() {
         
         {/* Kids Product Detail Pages */}
         <Route path="/kids/boyswear/:productId" element={<BoyswearDetail />} />
-        <Route path="/kids/girlwear/:productId" element={<GirlwearDetail />} />
+        <Route path="/kids/girlwear/:productId" element={<GirlWearDetail />} />
 
 
 
